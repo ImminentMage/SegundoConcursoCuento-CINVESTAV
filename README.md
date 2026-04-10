@@ -1,8 +1,21 @@
 # Segundo Concurso de Cuento - CINVESTAV
 
-Sitio web del Segundo Concurso de Cuento de CINVESTAV, desarrollado como una landing page informativa para presentar la convocatoria, las bases, los premios y la información general del concurso.
+Sitio web del Segundo Concurso de Cuento de CINVESTAV, desarrollado como una landing page informativa para presentar la convocatoria, las bases, los premios y la informacion general del concurso.
 
-La página fue realizada en colaboración con el Dr. Jose Matias Alvarado Mentado.
+La pagina fue realizada en colaboracion con el Dr. Jose Matias Alvarado Mentado.
+
+## Descripcion
+
+La pagina incluye secciones como:
+
+- portada principal del concurso
+- descripcion general de la convocatoria
+- bases de participacion
+- premios y reconocimientos
+- participantes y estadisticas
+- informacion de contacto y envio de cuentos
+
+El sitio esta construido como una aplicacion frontend con React, TypeScript y Vite, con una estetica orientada a divulgacion, ciencia y tecnologia.
 
 ## Demo
 
@@ -10,38 +23,24 @@ Demo disponible en:
 
 - http://62.72.27.188:8083
 
-## Descripción
-
-La página incluye secciones como:
-
-- portada principal del concurso
-- descripción general de la convocatoria
-- bases de participación
-- premios y reconocimientos
-- participantes y estadísticas
-- información de contacto y envío de cuentos
-
-El sitio está construido como una aplicación frontend con Gemini, React, TypeScript y Vite, con una estética orientada a divulgación, ciencia y tecnología.
-
-## Tecnologías
+## Tecnologias
 
 - React 18
 - TypeScript
 - Vite
 - Tailwind CSS
 - componentes UI basados en Radix
-- iconografía con Lucide
-- Nanobanana 2
+- iconografia con Lucide
 
 ## Estructura general
 
-- `src/app`: composición principal de la aplicación y secciones de la página
-- `src/app/components`: componentes visuales, pestañas y bloques del sitio
-- `src/styles`: estilos globales, tema y tipografías
-- `public`: recursos públicos del proyecto
+- `src/app`: composicion principal de la aplicacion y secciones de la pagina
+- `src/app/components`: componentes visuales, pestanas y bloques del sitio
+- `src/styles`: estilos globales, tema y tipografias
+- `public`: recursos publicos del proyecto
 - `src/assets` y `src/imports`: materiales visuales y documentos de apoyo utilizados como referencia
 
-## Ejecución local
+## Ejecucion local
 
 Instala las dependencias:
 
@@ -55,7 +54,7 @@ Inicia el servidor de desarrollo:
 npm run dev
 ```
 
-Para generar la versión de producción:
+Para generar la version de produccion:
 
 ```bash
 npm run build
