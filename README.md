@@ -2,6 +2,8 @@
 
 Sitio web del Segundo Concurso de Cuento de CINVESTAV, desarrollado como una landing page informativa para presentar la convocatoria, las bases, los premios y la información general del concurso.
 
+La página fue realizada con el Dr. Jose Matias Alvarado Mentado.
+
 ## Descripción
 
 La página incluye secciones como:
