@@ -4,6 +4,8 @@ Sitio web del Segundo Concurso de Cuento de CINVESTAV, desarrollado como una lan
 
 La página fue realizada en colaboración con el Dr. Jose Matias Alvarado Mentado.
 
+Demo pública: http://62.72.27.188:8081
+
 ## Descripción
 
 La página incluye secciones como:
