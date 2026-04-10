@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+*.log
+
+# Local reference/source assets not needed in the deployable repo
+Androides pagina cuentos/
+guidelines/
+tmp_source/
+contenido_original_consolidado.md
