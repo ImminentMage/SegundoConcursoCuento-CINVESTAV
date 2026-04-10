@@ -13,7 +13,7 @@ La página incluye secciones como:
 - participantes y estadísticas
 - información de contacto y envío de cuentos
 
-El sitio está construido como una aplicación frontend con React, TypeScript y Vite, con una estética orientada a divulgación, ciencia y tecnología.
+El sitio está construido como una aplicación frontend con Gemini, React, TypeScript y Vite, con una estética orientada a divulgación, ciencia y tecnología.
 
 ## Tecnologías
 
@@ -23,6 +23,7 @@ El sitio está construido como una aplicación frontend con React, TypeScript y 
 - Tailwind CSS
 - componentes UI basados en Radix
 - iconografía con Lucide
+- Nanobanana 2
 
 ## Estructura general
 
