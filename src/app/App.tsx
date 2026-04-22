@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import cinvestLogo from '../imports/cinvestavipn-logo-photoroom.png';
+import cinvestLogo from '../../FotosFondo/LOGO CINVESTAV.png';
 import heroUpperLeft from '../imports/hero-android-upper-left-portrait.png';
-import heroCat from '../imports/hero-android-cat.png';
+import heroCat from '../../FotosFondo/GatoFondo.png';
 import heroDog from '../imports/hero-android-dog.png';
-import heroFox from '../imports/hero-android-fox.png';
+import heroFox from '../../FotosFondo/Zorro fondo.png';
 import heroLeftPortrait from '../imports/hero-android-left-portrait.png';
 import heroRight from '../imports/hero-android-right.png';
 import androidMature from '../imports/179be9db20b7bc7c29470585bff30a5478da76a3-1.png';
@@ -13,6 +13,14 @@ import { VectorRobotOverlay } from './components/BackgroundDecoration';
 export default function App() {
   const [activeTab, setActiveTab] = useState('inicio');
   const useAlternateVectorRobots = true;
+  const cleanAssetStyle = {
+    opacity: 1,
+    filter: 'none',
+    mixBlendMode: 'normal' as const,
+    backdropFilter: 'none',
+    WebkitBackdropFilter: 'none',
+    isolation: 'isolate' as const,
+  };
 
   const tabs = [
     { id: 'inicio', label: 'Inicio' },
@@ -25,7 +33,7 @@ export default function App() {
   const inicioCards = [
     {
       title: 'Recepción de trabajos:',
-      body: 'del 8 de abril de 2026 al 22 de junio de 2026.',
+      body: 'del 8 de abril de 2006 al 22 de junio de 2006.',
       accent: 'text-[#00d4ff]',
     },
     {
@@ -46,12 +54,12 @@ export default function App() {
 
   const bases = [
     'La temática deberá versar sobre el impacto de la computación en la sociedad y la cultura modernas. Actualmente, casi todas las personas interactuamos con dispositivos computacionales y/o robots. Esta práctica ha modificado nuestros hábitos de vida desde el nacimiento hasta la senectud; pero, especialmente, ha modificado nuestras expectativas. En las actividades productivas se han adoptado dispositivos electromecánicos para hacerlas más eficientes; en la vida diaria, para resolver necesidades personales y/o suplir carencias físicas. Sin embargo, el extremo significativo, cada vez más frecuente, es la incorporación de dispositivos electrónicos y animados para la convivencia emocional y afectiva entre las personas: hecho inédito y de profundas consecuencias, aún imprevisibles en la historia humana. El concurso está dirigido a quienes, a través de una historia breve o cuento, narren su reflexión y proyección imaginativa sobre a lo que pudiera conducirnos la actual sinergia humanidad – computadoras/robots; las consecuencias de la irrupción irreversible e intensa del cómputo en la vida y la inteligencia. ¿Hacia dónde vamos?',
-    'El certamen queda abierto a partir de la publicación de la convocatoria y hasta el 22 de junio de 2026.',
+    'El certamen queda abierto a partir de la publicación de la convocatoria y hasta el 22 de junio de 2006.',
     'Los escritores solo podrán participar con un cuento inédito y que no esté participando en algún otro concurso o en proceso de contratación o producción editorial, simultáneamente a este concurso.',
     'El cuento deberá estar escrito en español y se entregará por triplicado, a computadora, a doble espacio y en papel tamaño carta por una sola cara, con márgenes de 2.5 Pts.; deberá tener una extensión mínima de cinco cuartillas y máxima de 15, escrito con letra tipo Arial de 11 puntos.',
     'Los trabajos deberán entregarse nominados con un seudónimo y título del cuento, por triplicado en un sobre cerrado; en el interior del mismo debe incluirse otro sobre tamaño esquela y cerrado que contenga una ficha con la identidad del autor (nombre, dirección, lugar de procedencia, teléfono de domicilio, correo electrónico), título del cuento y seudónimo. En la parte exterior del sobre tamaño esquela deberá tener rotulado solo el seudónimo y título del cuento.',
     'Los trabajos deberán remitirse o entregarse en un sobre rotulado como: Concurso Nacional de Cuento: la Computación del siglo XXI, según el caso, a:',
-    'De los trabajos enviados por correo solo se aceptarán aquellos en los que la fecha máxima del matasellos de recepción del CINVESTAV sea a más tardar el día 22 de junio de 2026. De los enviados a través del portal electrónico, los cargados previa la hora de cierre de la convocatoria.',
+    'De los trabajos enviados por correo solo se aceptarán aquellos en los que la fecha máxima del matasellos de recepción del CINVESTAV sea a más tardar el día 22 de junio de 2006. De los enviados a través del portal electrónico, los cargados previa la hora de cierre de la convocatoria.',
     'El jurado calificador estará integrado por destacados escritores y expertos en la disciplina del cómputo, cuyos nombres serán dados a conocer una vez que se haya dictaminado el premio. Su fallo será inapelable y además el jurado está facultado para descalificar cualquier trabajo, otorgar menciones honoríficas e incluso declararlo desierto. Ante cualquier situación no prevista en la presente convocatoria, el jurado calificador tendrá la autoridad suficiente para resolverla conjuntamente con las autoridades organizadoras del concurso.',
     'Una vez emitido el fallo del jurado, se procederá a la apertura de la plica de identificación de los ganadores, quienes serán notificados de manera personal.',
     'Se premiará al primer, segundo y tercer lugar, además de otorgarles un diploma de reconocimiento. De declararse autores con mención honorífica, estos solo recibirán un diploma de reconocimiento.',
@@ -95,9 +103,9 @@ export default function App() {
   ];
 
   const primerSummary = [
-    'Convocatoria: 23 de junio de 2026.',
-    'Cierre: 25 de agosto de 2026.',
-    'Resultados: 03 de septiembre de 2026.',
+    'Convocatoria: 23 de junio de 2006.',
+    'Cierre: 25 de agosto de 2006.',
+    'Resultados: 03 de septiembre de 2006.',
   ];
 
   const primerBlocks = [
@@ -159,8 +167,8 @@ export default function App() {
   ];
 
   const statsLines = [
-    'Lanzamiento de convocatoria: 23 de junio de 2026.',
-    'Cierre de convocatoria: 25 de agosto de 2026.',
+    'Lanzamiento de convocatoria: 23 de junio de 2006.',
+    'Cierre de convocatoria: 25 de agosto de 2006.',
     '47 cuentos recibidos.',
     '16 de mujeres y 31 de hombres.',
     'Autores de entre 15 a 70 años de edad.',
@@ -301,99 +309,83 @@ export default function App() {
 
         {/* Android/humanoid portraits - better distributed, no visible frames */}
         {/* Upper left - female android with blue hair */}
-        <div className="absolute top-[6%] left-[3%] w-[320px] h-[320px] opacity-45 pointer-events-none">
+        <div className="absolute top-[6%] left-[3%] w-[320px] h-[320px] pointer-events-none">
           <img
             src={heroUpperLeft}
             alt=""
-            className="w-full h-full object-contain object-center drop-shadow-[0_0_40px_rgba(0,212,255,0.3)]"
-            style={{
-              filter: 'brightness(0.75) contrast(1.15) saturate(0.85)'
-            }}
+            className="w-full h-full object-contain object-center"
+            style={cleanAssetStyle}
           />
         </div>
 
         {/* Upper right - male android with helmet */}
-        <div className="absolute top-[4%] right-[5%] w-[300px] h-[300px] opacity-50 pointer-events-none">
+        <div className="absolute top-[4%] right-[5%] w-[300px] h-[300px] pointer-events-none">
           <img
             src={heroRight}
             alt=""
-            className="w-full h-full object-contain object-center drop-shadow-[0_0_35px_rgba(168,85,247,0.25)]"
-            style={{
-              filter: 'brightness(0.8) contrast(1.1) saturate(0.9)'
-            }}
+            className="w-full h-full object-contain object-center"
+            style={cleanAssetStyle}
           />
         </div>
 
         {/* Bottom left - female android portrait */}
-        <div className="absolute bottom-[12%] left-[2%] w-[280px] h-[280px] opacity-40 pointer-events-none">
+        <div className="absolute bottom-[12%] left-[2%] w-[280px] h-[280px] pointer-events-none">
           <img
             src={heroLeftPortrait}
             alt=""
-            className="w-full h-full object-contain object-center drop-shadow-[0_0_30px_rgba(0,212,255,0.25)]"
-            style={{
-              filter: 'brightness(0.7) contrast(1.2) saturate(0.85)'
-            }}
+            className="w-full h-full object-contain object-center"
+            style={cleanAssetStyle}
           />
         </div>
 
         {/* Mid-left zone - mature male android - moved away from center */}
-        <div className="absolute top-[42%] left-[15%] w-[220px] h-[220px] opacity-32 pointer-events-none">
+        <div className="absolute top-[42%] left-[15%] w-[220px] h-[220px] pointer-events-none">
           <img
             src={androidMature}
             alt=""
-            className="w-full h-full object-contain object-center drop-shadow-[0_0_28px_rgba(0,212,255,0.18)]"
-            style={{
-              filter: 'brightness(0.72) contrast(1.18) saturate(0.82)'
-            }}
+            className="w-full h-full object-contain object-center"
+            style={cleanAssetStyle}
           />
         </div>
 
         {/* Upper-right interior - older male android with glasses - moved further right */}
-        <div className="absolute top-[20%] right-[20%] w-[210px] h-[210px] opacity-35 pointer-events-none">
+        <div className="absolute top-[20%] right-[20%] w-[210px] h-[210px] pointer-events-none">
           <img
             src={androidOlder}
             alt=""
-            className="w-full h-full object-contain object-center drop-shadow-[0_0_26px_rgba(168,85,247,0.2)]"
-            style={{
-              filter: 'brightness(0.75) contrast(1.15) saturate(0.8)'
-            }}
+            className="w-full h-full object-contain object-center"
+            style={cleanAssetStyle}
           />
         </div>
 
         {/* Robotic animals - bottom right area, better spaced */}
         {/* Robotic dog - moved further down and right */}
-        <div className="absolute bottom-[18%] right-[24%] w-[190px] h-[130px] opacity-40 pointer-events-none">
+        <div className="absolute bottom-[18%] right-[24%] w-[190px] h-[130px] pointer-events-none">
           <img
             src={heroDog}
             alt=""
-            className="w-full h-full object-contain object-center drop-shadow-[0_0_24px_rgba(0,212,255,0.18)]"
-            style={{
-              filter: 'brightness(0.75) contrast(1.15) saturate(0.8)'
-            }}
+            className="w-full h-full object-contain object-center"
+            style={cleanAssetStyle}
           />
         </div>
 
         {/* Robotic cat - moved to extreme right */}
-        <div className="absolute bottom-[10%] right-[8%] w-[220px] h-[160px] opacity-45 pointer-events-none">
+        <div className="absolute bottom-[10%] right-[8%] w-[220px] h-[160px] pointer-events-none">
           <img
             src={heroCat}
             alt=""
-            className="w-full h-full object-contain object-center drop-shadow-[0_0_30px_rgba(168,85,247,0.25)]"
-            style={{
-              filter: 'brightness(0.8) contrast(1.1) saturate(0.85)'
-            }}
+            className="w-full h-full object-contain object-center"
+            style={cleanAssetStyle}
           />
         </div>
 
         {/* Robotic fox - mid-right, away from center cluster */}
-        <div className="absolute top-[55%] right-[12%] w-[150px] h-[110px] opacity-36 pointer-events-none">
+        <div className="absolute top-[55%] right-[12%] w-[150px] h-[110px] pointer-events-none">
           <img
             src={heroFox}
             alt=""
-            className="w-full h-full object-contain object-center drop-shadow-[0_0_20px_rgba(0,212,255,0.16)]"
-            style={{
-              filter: 'brightness(0.72) contrast(1.15) saturate(0.82)'
-            }}
+            className="w-full h-full object-contain object-center"
+            style={cleanAssetStyle}
           />
         </div>
 
@@ -418,7 +410,12 @@ export default function App() {
         <header className="px-16 py-8">
           <div className="flex items-start gap-5 text-white">
             <div className="flex flex-col items-center w-[100px] pt-1">
-              <img src={cinvestLogo} alt="CINVESTAV" className="w-14 h-14 mb-2" />
+              <img
+                src={cinvestLogo}
+                alt="CINVESTAV"
+                className="w-[68px] h-[68px] mb-2 object-contain"
+                style={cleanAssetStyle}
+              />
               <div className="text-[1.05rem] tracking-wide opacity-95 font-medium text-center leading-none">CINVESTAV</div>
             </div>
             <div className="flex items-start gap-4 pt-[6px] max-w-[560px]">
@@ -530,7 +527,7 @@ export default function App() {
                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-12">
                   <div className="space-y-6 text-white/70 leading-relaxed text-lg max-w-4xl">
                     <p>
-                      Escritores residentes en México y mexicanos residentes en el extranjero, mayores de 16 años o por cumplir esta edad en el transcurso de 2026.
+                      Escritores residentes en México y mexicanos residentes en el extranjero, mayores de 16 años o por cumplir esta edad en el transcurso de 2006.
                     </p>
                   </div>
                 </div>
@@ -772,7 +769,7 @@ export default function App() {
                           Recepción de trabajos:
                         </label>
                         <p className="text-white">
-                          del 8 de abril de 2026 al 22 de junio de 2026.
+                          del 8 de abril de 2006 al 22 de junio de 2006.
                         </p>
                       </div>
 
