@@ -416,12 +416,16 @@ export default function App() {
       <div className="relative z-10">
         {/* Header */}
         <header className="px-16 py-8">
-          <div className="flex items-center gap-4">
-            <img src={cinvestLogo} alt="CINVESTAV" className="w-14 h-14" />
-            <div className="text-white">
-              <div className="text-base tracking-wide opacity-95 font-medium">CINVESTAV</div>
-              <div className="text-xs opacity-75 tracking-wide max-w-[360px] leading-relaxed">
-                Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional
+          <div className="flex items-start gap-5 text-white">
+            <div className="flex flex-col items-center w-[100px] pt-1">
+              <img src={cinvestLogo} alt="CINVESTAV" className="w-14 h-14 mb-2" />
+              <div className="text-[1.05rem] tracking-wide opacity-95 font-medium text-center leading-none">CINVESTAV</div>
+            </div>
+            <div className="flex items-start gap-4 pt-[6px] max-w-[560px]">
+              <div className="text-white/80 text-[2rem] leading-none">|</div>
+              <div className="text-[0.95rem] opacity-90 tracking-[0.01em] leading-[1.35] font-medium">
+                <div>Centro de Investigación y de Estudios</div>
+                <div>Avanzados del Instituto Politécnico Nacional</div>
               </div>
             </div>
           </div>
@@ -437,7 +441,7 @@ export default function App() {
               </h2>
 
               <h1 className="text-[#ff0066] mb-4" style={{
-                fontSize: '4.3rem',
+                fontSize: '3.7rem',
                 lineHeight: '1.06',
                 fontFamily: 'Georgia, Cambria, "Times New Roman", Times, serif',
                 fontWeight: 400,
@@ -526,7 +530,7 @@ export default function App() {
                 <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-12">
                   <div className="space-y-6 text-white/70 leading-relaxed text-lg max-w-4xl">
                     <p>
-                      Escritores residentes en México y mexicanos residentes en el extranjero, mayores de 15 años o por cumplir esta edad en el transcurso de 2026.
+                      Escritores residentes en México y mexicanos residentes en el extranjero, mayores de 16 años o por cumplir esta edad en el transcurso de 2026.
                     </p>
                   </div>
                 </div>
@@ -569,31 +573,6 @@ export default function App() {
                   ))}
                 </div>
 
-                <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-10">
-                  <h3 className="text-2xl mb-6" style={{
-                    fontFamily: 'Georgia, Cambria, "Times New Roman", Times, serif'
-                  }}>
-                    Entidades de procedencia
-                  </h3>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-left border-collapse">
-                      <thead>
-                        <tr className="border-b border-white/10">
-                          <th className="py-3 pr-4 text-white/85 font-medium">Entidad</th>
-                          <th className="py-3 text-white/85 font-medium">Número</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {procedenciaRows.map(([entity, count]) => (
-                          <tr key={entity} className="border-b border-white/5 last:border-b-0">
-                            <td className="py-3 pr-4 text-white/70">{entity}</td>
-                            <td className="py-3 text-white/70">{count}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
               </section>
             )}
 
